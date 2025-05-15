@@ -1,0 +1,253 @@
+/* Global Styles */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+    --warning-color: #f39c12;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --console-bg: #1e1e1e;
+    --console-text: #00ff00;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: var(--dark-color);
+  }
+  
+  .container {
+    max-width: 1200px;
+  }
+  
+  /* Header Styling */
+  h1 {
+    color: var(--primary-color);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 3px solid var(--secondary-color);
+  }
+  
+  /* Card Styling */
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    overflow: hidden;
+  }
+  
+  .card-header {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 0.75rem 1.25rem;
+    border-bottom: none;
+  }
+  
+  .card-body {
+    padding: 1.5rem;
+  }
+  
+  /* Form Controls */
+  .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 0.6rem 0.75rem;
+    transition: all 0.3s;
+  }
+  
+  .form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+  }
+  
+  .form-label {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  /* Buttons */
+  .btn {
+    border-radius: 4px;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    transition: all 0.3s;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .btn-success {
+    background-color: var(--success-color);
+    border-color: var(--success-color);
+  }
+  
+  .btn-success:hover {
+    background-color: #27ae60;
+    border-color: #27ae60;
+  }
+  
+  .btn-danger {
+    background-color: var(--danger-color);
+    border-color: var(--danger-color);
+  }
+  
+  .btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+  }
+  
+  .btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+  }
+  
+  .btn-primary:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+  }
+  
+  /* Status Section */
+  #status {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-top: 1.5rem;
+  }
+  
+  #statusText {
+    font-weight: 600;
+    color: var(--primary-color);
+  }
+  
+  /* Progress Bar */
+  .progress {
+    height: 1rem;
+    border-radius: 4px;
+    background-color: #e9ecef;
+    margin-top: 0.75rem;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease;
+  }
+  
+  /* Console-like Log Container */
+  .log-container {
+    background-color: var(--console-bg) !important;
+    color: var(--console-text) !important;
+    border-radius: 6px;
+    height: 300px;
+    overflow-y: auto;
+    padding: 12px;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+  }
+  
+  .log-entry {
+    margin-bottom: 6px;
+    padding-left: 5px;
+    border-left: 3px solid transparent;
+  }
+  
+  .log-info {
+    color: #3498db;
+    border-left-color: #3498db;
+  }
+  
+  .log-success {
+    color: #2ecc71;
+    border-left-color: #2ecc71;
+  }
+  
+  .log-warning {
+    color: #f39c12;
+    border-left-color: #f39c12;
+  }
+  
+  .log-error {
+    color: #e74c3c;
+    border-left-color: #e74c3c;
+  }
+  
+  .log-timestamp {
+    color: #95a5a6;
+    margin-right: 8px;
+  }
+  
+  /* Table Styling */
+  #venuesTable {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #venuesTable th {
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  #venuesTable td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  #venuesTable tr:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+  }
+  
+  /* DataTables Custom Styling */
+  .dataTables_wrapper .dataTables_length, 
+  .dataTables_wrapper .dataTables_filter {
+    margin-bottom: 1rem;
+  }
+  
+  .dataTables_wrapper .dataTables_length select, 
+  .dataTables_wrapper .dataTables_filter input {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+  }
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5em 1em;
+    border-radius: 4px;
+  }
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: var(--secondary-color);
+    color: white !important;
+    border: 1px solid var(--secondary-color);
+  }
+  
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: var(--light-color);
+    color: var(--primary-color) !important;
+    border: 1px solid var(--light-color);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+    
+    .card-body {
+      padding: 1rem;
+    }
+    
+    .log-container {
+      height: 200px;
+    }
+  }

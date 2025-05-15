@@ -1,0 +1,6 @@
+.env
+*.csv
+__pycache__
+venv
+complete_venues.csv
+README.MD
